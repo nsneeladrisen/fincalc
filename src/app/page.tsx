@@ -95,7 +95,7 @@ export default function Home() {
             <div className="flex flex-col gap-3 sm:flex-row">
               <Button
                 size="lg"
-                render={<Link href="#mortgage-repayment" />}
+                render={<Link href="/mortgage-repayments-calculator" />}
                 nativeButton={false}
               >
                 Mortgage repayment calculator
@@ -104,7 +104,7 @@ export default function Home() {
               <Button
                 size="lg"
                 variant="outline"
-                render={<Link href="#compound-interest" />}
+                render={<Link href="/compound-interest-calculator" />}
                 nativeButton={false}
               >
                 Compound interest calculator
@@ -184,6 +184,15 @@ export default function Home() {
                   <span className="text-muted-foreground">
                     No account required
                   </span>
+                  <Button
+                    variant="link"
+                    className="ml-auto"
+                    render={<Link href="/mortgage-repayments-calculator" />}
+                    nativeButton={false}
+                  >
+                    Open calculator
+                    <ArrowRightIcon data-icon="inline-end" />
+                  </Button>
                 </CardFooter>
               </Card>
 
@@ -242,6 +251,15 @@ export default function Home() {
                   <span className="text-muted-foreground">
                     No account required
                   </span>
+                  <Button
+                    variant="link"
+                    className="ml-auto"
+                    render={<Link href="/compound-interest-calculator" />}
+                    nativeButton={false}
+                  >
+                    Open calculator
+                    <ArrowRightIcon data-icon="inline-end" />
+                  </Button>
                 </CardFooter>
               </Card>
             </div>
